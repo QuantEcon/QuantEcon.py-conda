@@ -1,0 +1,87 @@
+package:
+  name: quantecon
+  version: "0.3.1"
+
+source:
+  fn: quantecon-0.3.1.tar.gz
+  url: https://pypi.python.org/packages/source/q/quantecon/quantecon-0.3.1.tar.gz
+  md5: c79251eaf488caa86b5912dbebba198c
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - quantecon = quantecon:main
+    #
+    # Would create an entry point called quantecon that calls quantecon.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - sphinx
+    - ipython
+    - numpy
+    - numpydoc
+    - scipy
+    - matplotlib
+    - pandas
+    - statsmodels
+    - sympy
+    - numba
+    - requests
+    - pytables
+
+  run:
+    - python
+    - sphinx
+    - ipython
+    - numpy
+    - numpydoc
+    - scipy
+    - matplotlib
+    - pandas
+    - statsmodels
+    - sympy
+    - numba
+    - requests
+    - pytables
+
+test:
+  # Python imports
+  imports:
+    - quantecon
+    - quantecon.game_theory
+    - quantecon.markov
+    # - quantecon.models
+    - quantecon.random
+    - quantecon.tests
+    - quantecon.util
+
+  # commands:
+  # These are tests to be run at install time
+
+  # # You can also put a file called run_test.py in the recipe that will be run
+  # # at test time.
+
+  # requires:
+  #   - nose
+
+about:
+  home: https://github.com/QuantEcon/QuantEcon.py
+  license: BSD
+  summary: 'QuantEcon is a package to support all forms of quantitative economic modelling.'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

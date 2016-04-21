@@ -1,2 +1,5 @@
 # QuantEcon.py-conda
-For conda package of QuantEcon.py code library
+
+This repo contains the conda build recipe for the QuantEcon.py code library
+
+
