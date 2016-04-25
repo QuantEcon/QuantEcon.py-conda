@@ -1,11 +1,11 @@
 package:
   name: quantecon
-  version: "0.3.1"
+  version: "0.3.2"
 
 source:
-  fn: quantecon-0.3.1.tar.gz
-  url: https://pypi.python.org/packages/source/q/quantecon/quantecon-0.3.1.tar.gz
-  md5: c79251eaf488caa86b5912dbebba198c
+  fn: quantecon-0.3.2.tar.gz
+  url: https://pypi.python.org/packages/source/q/quantecon/quantecon-0.3.2.tar.gz
+  md5: d51b9419c697a0a4ee3fe38aa2ed68e7
 #  patches:
    # List any patch files here
    # - fix.patch
